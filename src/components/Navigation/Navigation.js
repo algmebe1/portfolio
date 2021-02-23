@@ -12,11 +12,18 @@ function Navigation() {
         <div className="header__nav-buttons">
             <a href="/" 
             onClick={e => 
+                {let about = document.getElementById('about');
+            e.preventDefault()
+        about && about.scrollIntoView({behavior: 'smooth', block: 'start'});
+        window.history.pushState('about', 'about', '/about')
+    }}>ABOUT</a>
+            <a href="/" 
+            onClick={e => 
                 {let skills = document.getElementById('skills');
             e.preventDefault()
         skills && skills.scrollIntoView({behavior: 'smooth', block: 'start'});
         window.history.pushState('skills', 'skills', '/skills')
-    }}>Skills</a>
+    }}>SKILLS</a>
 
 <a href="/" 
             onClick={e => 
@@ -24,7 +31,7 @@ function Navigation() {
             e.preventDefault()
         projects && projects.scrollIntoView({behavior: 'smooth', block: 'start'});
         window.history.pushState('projects', 'projects', '/projects')
-    }}>Projects</a>
+    }}>PROJECTS</a>
 
 <a href="/" 
             onClick={e => 
@@ -32,7 +39,7 @@ function Navigation() {
             e.preventDefault()
         contact && contact.scrollIntoView({behavior: 'smooth', block: 'start'});
         window.history.pushState('contact', 'contact', '/contact')
-    }}>Contact</a>
+    }}>CONTACT</a>
         </div>
         )
 }
