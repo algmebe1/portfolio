@@ -5,16 +5,3 @@
     align-items: center;
     justify-content: center;
 }
-
-/* .header__title {
-    text-align: center;
-} */
-
-.header__title--spacer {
-    width: 80%;
-}
-
-.header__introduction {
-    max-width: 600px;
-    margin: 0 20px;
-}
