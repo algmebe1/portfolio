@@ -3,8 +3,9 @@
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    padding: 50px 0;
+    padding: 20px 0;
     width: 100%;
+    background: linear-gradient(#4780D6, rgb(77, 132, 215))
 }
 
 .header__nav-buttons > a {
